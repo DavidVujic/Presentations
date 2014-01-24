@@ -1,0 +1,22 @@
+﻿@model List<WebbProjektet.Models.Person>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Webbprojektet</title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @foreach (var user in Model)
+        {
+            <div>@user.Name</div>
+        }
+    </div>
+</body>
+</html>
