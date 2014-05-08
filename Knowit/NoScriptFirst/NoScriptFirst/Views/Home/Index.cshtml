@@ -1,0 +1,62 @@
+﻿@model dynamic
+
+
+<h2>Hej!</h2>
+
+<div id="form-container">
+    <form action="/home/add/" id="my-little-form" method="POST">
+        @Html.AntiForgeryToken()
+        <input type="text" name="fullName" />
+        <input type="number" name="age" />
+
+        <input type="submit" value="skicka" id="my-little-button" />
+    </form>
+</div>
+
+<div id="loading-container" style="display: none"></div>
+
+@section scripts{
+
+    <script type="text/template" id="loading-view-template">
+
+        @Html.Partial("_Loading")
+
+    </script>
+    
+    <script>
+        (function ($) {
+
+            $(document).ready(function () {
+                $('#my-little-button').on('click', function (clickEvent) {
+                    clickEvent.preventDefault();
+
+                    var template = $('#loading-view-template').html();
+                    var loadingContainer = $('#loading-container');
+                    var formContainer = $('#form-container');
+
+                    var html = Mustache.to_html(template, null);
+
+                    loadingContainer.html(html);
+
+                    formContainer.hide();
+                    loadingContainer.show();
+
+                    var form = $('#my-little-form'); 
+                    var url = form.attr('action');
+
+                    var data = form.serialize();
+
+                    var promise = $.post(url, data);
+
+                    promise.done(function (result) {
+                        console.log(result);
+                    });
+                });
+            });
+
+
+        }(jQuery));
+    </script>
+
+}
+
