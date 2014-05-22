@@ -1,7 +1,9 @@
 ﻿/// <reference path="_references.js" />
 
-module('example tests');
+test('Will this work?', function () {
 
-test('will this work?', function () {
-	ok(true);
+	var x = 1;
+	var y = 2;
+
+	equal(x, y);
 });

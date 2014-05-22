@@ -87,10 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
-    <Content Include="JavaScriptTests\example.js" />
     <Content Include="JavaScriptTests\QUnit\qunit-1.14.0.css" />
     <Content Include="JavaScriptTests\QUnit\qunit-1.14.0.js" />
     <Content Include="JavaScriptTests\QUnit\TestRunner.html" />
+    <Content Include="JavaScriptTests\searchTests.js" />
     <Content Include="JavaScriptTests\_references.js" />
   </ItemGroup>
   <ItemGroup>
