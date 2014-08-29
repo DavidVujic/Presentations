@@ -1,0 +1,29 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+	config.vm.box = "win2012test"
+	config.vm.communicator = "winrm"
+
+	# forward RDP and WINRS ports
+	config.vm.network :forwarded_port, guest: 3389, host: 3377, id: "rdp", auto_correct: false
+	config.vm.network :forwarded_port, guest: 5985, host: 5985, id: "winrm", auto_correct: true
+	config.windows.set_work_network = true
+	
+	config.vm.synced_folder "/delad-vagrantmapp", "/vagrantmapp"
+
+	config.vm.provision :shell, path: "Install-Chocolatey.ps1"
+	config.vm.provision :shell, inline: '[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Chocolatey\bin", "Machine")'
+
+	config.vm.provision :shell, path: "Install-Apps.ps1"
+
+	config.vm.provider "virtualbox" do |v|
+		v.name = "devmaskin"
+		v.gui = true
+		v.cpus = 1
+		v.memory = 4096
+		v.customize ["setextradata", :id, "CustomVideoMode1", "1600x900x32"]
+	end
+end
