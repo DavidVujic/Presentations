@@ -17,13 +17,13 @@
 						Phone = new Phone { Number = "123456789", Type = PhoneType.Home}
 					};
 					break;
-				case "197405200473":
+				case "191010101010":
 					customer = new Customer
 					{
 						CustomerId = 2,
 						FirstName = "David",
 						LastName = "Vujic",
-						Phone = new Phone { Number = "0735200600", Type = PhoneType.Mobile }
+						Phone = new Phone { Number = "999999999", Type = PhoneType.Mobile }
 					};
 					break;
 			}
