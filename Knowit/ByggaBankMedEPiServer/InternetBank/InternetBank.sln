@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank", "InternetBank\InternetBank.csproj", "{AD9BBC88-BC16-4126-9F05-00A37EF8875A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.CustomerService", "InternetBank.CustomerService\InternetBank.CustomerService.csproj", "{D07D4F6C-E8D8-461E-B4F5-0688463F3297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.Proxy", "InternetBank.Proxy\InternetBank.Proxy.csproj", "{6D8D07C3-F61F-47B5-8E81-227E808732BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.Logging", "InternetBank.Logging\InternetBank.Logging.csproj", "{8EBF4EE3-21F8-4F85-8CDE-FD2FEB88F8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.CustomerService.Fake", "InternetBank.CustomerService.Fake\InternetBank.CustomerService.Fake.csproj", "{8BF99430-FD96-45F3-9A54-AAA105D88920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.CustomerService.Tests", "InternetBank.CustomerService.Tests\InternetBank.CustomerService.Tests.csproj", "{0047EEDB-E137-47CF-B3BE-38C67C2E1E98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBank.Tests", "InternetBank.Tests\InternetBank.Tests.csproj", "{39119615-378E-408D-A197-FF99A7364E58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD9BBC88-BC16-4126-9F05-00A37EF8875A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9BBC88-BC16-4126-9F05-00A37EF8875A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9BBC88-BC16-4126-9F05-00A37EF8875A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9BBC88-BC16-4126-9F05-00A37EF8875A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07D4F6C-E8D8-461E-B4F5-0688463F3297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07D4F6C-E8D8-461E-B4F5-0688463F3297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07D4F6C-E8D8-461E-B4F5-0688463F3297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07D4F6C-E8D8-461E-B4F5-0688463F3297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8D07C3-F61F-47B5-8E81-227E808732BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8D07C3-F61F-47B5-8E81-227E808732BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8D07C3-F61F-47B5-8E81-227E808732BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8D07C3-F61F-47B5-8E81-227E808732BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBF4EE3-21F8-4F85-8CDE-FD2FEB88F8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBF4EE3-21F8-4F85-8CDE-FD2FEB88F8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBF4EE3-21F8-4F85-8CDE-FD2FEB88F8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBF4EE3-21F8-4F85-8CDE-FD2FEB88F8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF99430-FD96-45F3-9A54-AAA105D88920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF99430-FD96-45F3-9A54-AAA105D88920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF99430-FD96-45F3-9A54-AAA105D88920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF99430-FD96-45F3-9A54-AAA105D88920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0047EEDB-E137-47CF-B3BE-38C67C2E1E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0047EEDB-E137-47CF-B3BE-38C67C2E1E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0047EEDB-E137-47CF-B3BE-38C67C2E1E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0047EEDB-E137-47CF-B3BE-38C67C2E1E98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39119615-378E-408D-A197-FF99A7364E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39119615-378E-408D-A197-FF99A7364E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39119615-378E-408D-A197-FF99A7364E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39119615-378E-408D-A197-FF99A7364E58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
