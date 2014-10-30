@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="labb.css" rel="stylesheet" />
+        <title>RequireJS-labb</title>
+	</head>
+<body>
+
+<form name="labb-form" id="labb-form" method="post" action="tack.cshtml">
+
+    <input type="text" name="username" id="username" value="" />
+    <input type="submit" id="submit-button" value="Skicka" />
+
+</form>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/labb.post.js"></script>
+<script src="scripts/labb.dom.js"></script>
+
+<script>
+/*global labb:true */
+    (function ($) {
+
+        $(document).ready(function () {
+    
+        labb.post.init($);
+        labb.dom.init($);
+
+        $('#submit-button').on('click', function (ev) {
+            ev.preventDefault();
+
+            labb.dom.appendHidden('user-id', '123', '#labb-form');
+
+            var promise = labb.post.submit('#labb-form');
+
+            promise.done(function (result){
+                console.log(result);
+            });
+
+            promise.always(function () {
+                labb.dom.empty('#labb-form');
+            });
+        });
+
+        });
+
+    }(jQuery));
+</script>
+
+</body>
+</html>

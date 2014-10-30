@@ -1,0 +1,41 @@
+
+@functions {
+	public bool IsAjax()
+	{
+		return (Request["X-Requested-With"] == "XMLHttpRequest") || (Request.Headers["X-Requested-With"] == "XMLHttpRequest");
+	}
+
+	public string GetUserName()
+	{
+		return Request.Form["username"];
+	}
+
+	public string GetUserId()
+	{
+		return Request.Form["user-id"];
+	}
+}
+
+@{
+	if (IsAjax())
+	{
+		var json = "{\"userName\":\"" + GetUserName() + "\",\"userId\":\"" + GetUserId() + "\"}";
+        
+        Response.Write(json);
+	}
+	else
+	{
+		<!DOCTYPE html>
+
+		<html>
+			<head>
+				<link href="labb.css" rel="stylesheet" />
+		        <title>RequireJS-labb</title>
+			</head>
+		<body>
+
+			<h1>Tack @GetUserName()!</h1>
+		</body>
+		</html>
+	}
+}
