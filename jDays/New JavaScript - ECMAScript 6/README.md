@@ -6,10 +6,10 @@ Code from my presentation at jDays 2015
 ES6 & TDD: Can i test it?
 http://davidvujic.blogspot.se/2015/03/es6-and-tdd-can-i-test-it.html
 
-Sublime ES6 coding - the tools and the flow:
+Sublime ES6 coding - the tools and the flow
 http://davidvujic.blogspot.se/2015/03/sublime-es6-coding-the-tools-and-the-flow.html
 
-What? Wait. Really? Oh no! (a post about ES6 classes and privacy):
+What? Wait. Really? Oh no! (a post about ES6 classes and privacy)
 http://davidvujic.blogspot.se/2015/03/what-wait-really-oh-no-a-post-about-es6-classes-and-privacy.html
 
 Yeah, we got classes now (ES6). You happy, pappy?
