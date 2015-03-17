@@ -1,1 +1,1 @@
-import {} from './modules/exampletest.js';
+import './modules/exampletest.js';

@@ -57,15 +57,6 @@ gulp.task('qunit', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(code.source, ['transpile source']);
-});
-
-gulp.task('default', ['transpile source', 'watch']);
-
-
-
-/*
-gulp.task('watch', function () {
 	gulp.watch(tests.source, ['transpile tests', 'lint-tests', 'qunit']);
 	gulp.watch(code.source, ['transpile source', 'lint-source', 'qunit']);
 });
@@ -76,4 +67,4 @@ gulp.task('default',
 	'lint-tests', 
 	'lint-source', 
 	'qunit', 
-	'watch']);*/
+	'watch']);
