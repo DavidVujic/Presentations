@@ -6,6 +6,11 @@ My posts about JavaScript:
 http://davidvujic.blogspot.se/search/label/JavaScript
 
 ###Recommended read about ES6###
-For and agains let: http://davidwalsh.name/for-and-against-let
+For and agains let: 
+http://davidwalsh.name/for-and-against-let
 
-Modules - export and import: https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#the-new-way
+Modules - export and import: 
+https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#the-new-way
+
+Modules - circular dependencies:
+https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#circular-module-dependency
