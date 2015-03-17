@@ -1,11 +1,6 @@
-define(["exports", "modules/foo"], function (exports, _modulesFoo) {
+define(["exports"], function (exports) {
   "use strict";
 
-  var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
-
   /*global console:true */
-
-  var foo = _interopRequire(_modulesFoo);
-
-  console.log(foo.message);
+  console.log("hello jDays!");
 });
