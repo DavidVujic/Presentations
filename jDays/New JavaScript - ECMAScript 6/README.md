@@ -30,3 +30,6 @@ https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#c
 
 JavaScript modules - howto:
 http://jsmodules.io/
+
+Essential JavaScript links by Eric Elliott:
+https://gist.github.com/ericelliott/d576f72441fc1b27dace#required-reading-online-resources
