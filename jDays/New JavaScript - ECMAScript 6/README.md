@@ -27,3 +27,6 @@ https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#t
 
 Modules - circular dependencies:
 https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch3.md#circular-module-dependency
+
+JavaScript modules - howto:
+http://jsmodules.io/
