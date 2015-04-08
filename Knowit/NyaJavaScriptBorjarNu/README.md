@@ -19,6 +19,9 @@ Is the ES6 import feature an anti-pattern?
 http://davidvujic.blogspot.se/2015/02/is-the-es6-import-feature-an-anti-pattern.html
 
 ###Missa inte detta om ES6###
+Deploying ES6:
+http://www.2ality.com/2015/04/deploying-es6.html
+
 For and agains let: 
 http://davidwalsh.name/for-and-against-let
 
