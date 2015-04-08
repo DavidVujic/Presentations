@@ -1,0 +1,18 @@
+{
+  "name": "NyaJavaScriptBorjarNu",
+  "version": "1.0.0",
+  "description": "Example code from the presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Vujic",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.0.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-newer": "^0.5.0",
+    "node-qunit-phantomjs": "^1.2.0"
+  }
+}
