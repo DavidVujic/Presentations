@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank", "DevBank\DevBank.csproj", "{A6B2AFDB-6079-419E-A761-E38E98D3922D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.CustomerService", "DevBank.CustomerService\DevBank.CustomerService.csproj", "{0BFEF420-AE3E-491B-A7BC-191ED7047356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.Logging", "DevBank.Logging\DevBank.Logging.csproj", "{9F49CAAD-ABB6-4C22-A4A0-529E20A5E915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.Proxy", "DevBank.Proxy\DevBank.Proxy.csproj", "{8E7DABE2-1F67-46CC-B1FA-6DACE04812F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.CustomerService.Fake", "DevBank.CustomerService.Fake\DevBank.CustomerService.Fake.csproj", "{5250AA33-7964-4291-A8B8-1E497C23EF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.Tests", "DevBank.Tests\DevBank.Tests.csproj", "{48878383-D046-4476-AD05-FAD88A7E1315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBank.CustomerService.Tests", "DevBank.CustomerService.Tests\DevBank.CustomerService.Tests.csproj", "{DEB65486-8086-4DD4-81EC-93BE88E6E288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B2AFDB-6079-419E-A761-E38E98D3922D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B2AFDB-6079-419E-A761-E38E98D3922D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B2AFDB-6079-419E-A761-E38E98D3922D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B2AFDB-6079-419E-A761-E38E98D3922D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFEF420-AE3E-491B-A7BC-191ED7047356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFEF420-AE3E-491B-A7BC-191ED7047356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFEF420-AE3E-491B-A7BC-191ED7047356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFEF420-AE3E-491B-A7BC-191ED7047356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F49CAAD-ABB6-4C22-A4A0-529E20A5E915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F49CAAD-ABB6-4C22-A4A0-529E20A5E915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F49CAAD-ABB6-4C22-A4A0-529E20A5E915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F49CAAD-ABB6-4C22-A4A0-529E20A5E915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7DABE2-1F67-46CC-B1FA-6DACE04812F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7DABE2-1F67-46CC-B1FA-6DACE04812F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7DABE2-1F67-46CC-B1FA-6DACE04812F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7DABE2-1F67-46CC-B1FA-6DACE04812F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5250AA33-7964-4291-A8B8-1E497C23EF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5250AA33-7964-4291-A8B8-1E497C23EF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5250AA33-7964-4291-A8B8-1E497C23EF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5250AA33-7964-4291-A8B8-1E497C23EF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48878383-D046-4476-AD05-FAD88A7E1315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48878383-D046-4476-AD05-FAD88A7E1315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48878383-D046-4476-AD05-FAD88A7E1315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48878383-D046-4476-AD05-FAD88A7E1315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB65486-8086-4DD4-81EC-93BE88E6E288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB65486-8086-4DD4-81EC-93BE88E6E288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB65486-8086-4DD4-81EC-93BE88E6E288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB65486-8086-4DD4-81EC-93BE88E6E288}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
