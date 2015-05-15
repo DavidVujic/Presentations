@@ -1,0 +1,39 @@
+﻿@model DevBank.Models.Pages.StandardPage
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The Dev Bank</title>
+    <link href="~/Static/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+
+        @{
+            if (ViewBag.Customer != null)
+            {
+                <div>Hello @ViewBag.Customer.FirstName @ViewBag.Customer.LastName!</div>
+            }
+        }
+
+    </div>
+    <div>
+        @Html.PropertyFor(model => model.MainBody)
+    </div>
+
+    <div>
+        @using (Html.BeginForm("Send", "Standard", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.TextBox("SocialSecurityNumber")
+
+            <div>
+                <input type="submit" value="Log in" />
+            </div>
+        }
+
+    </div>
+</body>
+</html>

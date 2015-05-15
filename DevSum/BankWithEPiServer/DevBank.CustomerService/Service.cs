@@ -2,7 +2,7 @@
 using AutoMapper;
 using DevBank.CustomerService.Entities;
 using DevBank.CustomerService.Helpers;
-//using DevBank.CustomerService.ServiceRef;
+using DevBank.CustomerService.ServiceRef;
 using DevBank.Logging;
 using DevBank.Proxy;
 
@@ -24,18 +24,17 @@ namespace DevBank.CustomerService
 
 		public LocalCustomer GetCustomerBy(string socialSecurityNumber)
 		{
-			throw new NotImplementedException();
-			//var request = new GetCustomerRequest(socialSecurityNumber);
+			var request = new GetCustomerRequest(socialSecurityNumber);
 
-			//_logger.Add(request);
+			_logger.Add(request);
 
-			//Func<ICustomerService, GetCustomerResponse> function = service => service.GetCustomer(request);
+			Func<ICustomerService, GetCustomerResponse> function = service => service.GetCustomer(request);
 
-			//var response = _proxy.Call(function);
+			var response = _proxy.Call(function);
 
-			//_logger.Add(response);
+			_logger.Add(response);
 
-			//return Mapper.Map<LocalCustomer>(response.GetCustomerResult);
+			return Mapper.Map<LocalCustomer>(response.GetCustomerResult);
 		}
 	}
 }

@@ -1,0 +1,26 @@
+﻿body {
+	background: black;
+	color: greenyellow;
+	font-size: 2em;
+	font-family: 'Consolas';
+	margin: 30px 0 0 50px;
+}
+
+input {
+	height: 80px;
+	background: black;
+	color: greenyellow;
+	border-color: greenyellow;
+	font-family: 'Consolas';
+}
+
+input[type=text] {
+	font-size: 2em;
+	width: 550px;
+}
+
+input[type=submit] {
+	margin-top: 30px;
+	font-size: 1.5em;
+	width: 250px;
+}

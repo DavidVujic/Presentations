@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using DevBank.CustomerService.Entities;
-//using InternetBank.CustomerService.ServiceRef;
+using DevBank.CustomerService.ServiceRef;
 
 namespace DevBank.CustomerService.Helpers
 {
@@ -8,8 +8,8 @@ namespace DevBank.CustomerService.Helpers
 	{
 		public static void Configure()
 		{
-			//Mapper.CreateMap<Customer, LocalCustomer>()
-			//	.ForMember(destination => destination.Telephone, opt => opt.MapFrom(src => src.Phone.Number));
+			Mapper.CreateMap<Customer, LocalCustomer>()
+				.ForMember(destination => destination.Telephone, opt => opt.MapFrom(src => src.Phone.Number));
 		}
 	}
 }
