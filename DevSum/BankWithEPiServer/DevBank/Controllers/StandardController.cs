@@ -1,14 +1,15 @@
 ﻿using System.Web.Mvc;
-using EPiServer.Web.Mvc;
 using DevBank.Business.ServiceFactories;
+using DevBank.CustomerService;
 using DevBank.Models.Pages;
 using DevBank.Models.ViewModels;
+using EPiServer.Web.Mvc;
 
 namespace DevBank.Controllers
 {
 	public class StandardController : PageController<StandardPage>
 	{
-		private readonly CustomerService.IService _service;
+		private readonly IService _service;
 
 		public StandardController(ICustomerFactory factory)
 		{

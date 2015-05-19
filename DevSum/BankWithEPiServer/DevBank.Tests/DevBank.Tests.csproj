@@ -141,6 +141,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -181,6 +182,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DevBank.CustomerService\DevBank.CustomerService.csproj">
+      <Project>{0BFEF420-AE3E-491B-A7BC-191ED7047356}</Project>
+      <Name>DevBank.CustomerService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DevBank\DevBank.csproj">
       <Project>{a6b2afdb-6079-419e-a761-e38e98d3922d}</Project>
       <Name>DevBank</Name>
