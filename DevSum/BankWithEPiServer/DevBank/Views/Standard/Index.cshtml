@@ -8,22 +8,13 @@
     <link href="~/Static/css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
 
-        @{
-            if (Model.CurrentUser != null)
-            {
-                <div>Hello @Model.CurrentUser.FirstName @Model.CurrentUser.LastName!</div>
-            }
-        }
-
-    </div>
     <div>
         @Html.PropertyFor(model => model.CurrentPage.MainBody)
     </div>
 
     <div>
-        @using (Html.BeginForm("Send", "Standard", FormMethod.Post, new { id = "my-example-form"}))
+        @using (Html.BeginForm("Send", "Standard", FormMethod.Post, new { id = "my-example-form" }))
         {
             @Html.AntiForgeryToken()
 
@@ -35,5 +26,8 @@
         }
 
     </div>
+
+    <div id="current-user-name">@Model.CurrentUser.FirstName @Model.CurrentUser.LastName</div>
+
 </body>
 </html>

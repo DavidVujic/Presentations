@@ -19,7 +19,7 @@ namespace DevBank.Models.ViewModels
 		{
 			CurrentPage = currentPage;
 
-			CurrentUser = currentUser;
+			CurrentUser = currentUser ?? new LocalCustomer();
 		}
 	}
 }

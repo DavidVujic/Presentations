@@ -30,7 +30,7 @@ namespace DevBank.Business.ServiceFactories
 		{
 			bool isFake;
 
-			bool.TryParse(ConfigurationManager.AppSettings["UseFakeServices"], out isFake);
+			bool.TryParse(ConfigurationManager.AppSettings["UseOfflineModeForServices"], out isFake);
 
 			return isFake;
 		}
