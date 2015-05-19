@@ -1,4 +1,4 @@
-﻿@model DevBank.Models.Pages.StandardPage
+﻿@model DevBank.Models.ViewModels.IPageViewModel<DevBank.Models.Pages.StandardPage>
 
 <!DOCTYPE html>
 
@@ -11,19 +11,19 @@
     <div>
 
         @{
-            if (ViewBag.Customer != null)
+            if (Model.CurrentUser != null)
             {
-                <div>Hello @ViewBag.Customer.FirstName @ViewBag.Customer.LastName!</div>
+                <div>Hello @Model.CurrentUser.FirstName @Model.CurrentUser.LastName!</div>
             }
         }
 
     </div>
     <div>
-        @Html.PropertyFor(model => model.MainBody)
+        @Html.PropertyFor(model => model.CurrentPage.MainBody)
     </div>
 
     <div>
-        @using (Html.BeginForm("Send", "Standard", FormMethod.Post))
+        @using (Html.BeginForm("Send", "Standard", FormMethod.Post, new { id = "my-example-form"}))
         {
             @Html.AntiForgeryToken()
 

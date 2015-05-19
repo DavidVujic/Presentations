@@ -17,23 +17,25 @@ namespace DevBank.Controllers
 
 		public ActionResult Index(StandardPage currentPage)
 		{
-			return View(currentPage);
+			var model = new PageViewModel<StandardPage>(currentPage);
+
+			return View(model);
 		}
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Send(StandardPage currentPage, UserModel model)
+		public ActionResult Send(StandardPage currentPage, UserModel user)
 		{
 			if (!ModelState.IsValid)
 			{
 				return RedirectToAction("Index");
 			}
 
-			var customer = _service.GetCustomerBy(model.SocialSecurityNumber);
+			var customer = _service.GetCustomerBy(user.SocialSecurityNumber);
 
-			ViewBag.Customer = customer;
+			var model = new PageViewModel<StandardPage>(currentPage, customer);
 
-			return View("Index", currentPage);
+			return View("Index", model);
 		}
 	}
 }
