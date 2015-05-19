@@ -35,6 +35,11 @@ namespace DevBank.Controllers
 
 			var model = new PageViewModel<StandardPage>(currentPage, customer);
 
+			if (Request.IsAjaxRequest())
+			{
+				return Json(model.ToJson());
+			}
+
 			return View("Index", model);
 		}
 	}

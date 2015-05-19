@@ -21,5 +21,10 @@ namespace DevBank.Models.ViewModels
 
 			CurrentUser = currentUser ?? new LocalCustomer();
 		}
+
+		public object ToJson()
+		{
+			return new {firstName = CurrentUser.FirstName, lastName = CurrentUser.LastName};
+		}
 	}
 }
