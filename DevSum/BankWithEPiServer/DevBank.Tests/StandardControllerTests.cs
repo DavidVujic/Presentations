@@ -20,6 +20,9 @@ namespace DevBank.Tests
 
 		private StandardController _controller;
 		private StandardPage _page;
+		private UserModel _userModel;
+
+		private const string SocialSecurityNumber = "191010101010";
 
 		[SetUp]
 		public void Setup()
@@ -31,9 +34,14 @@ namespace DevBank.Tests
 				.Setup(f => f.GetService())
 				.Returns(_service.Object);
 
+			_service
+				.Setup(s => s.GetCustomerBy(SocialSecurityNumber))
+				.Returns(new LocalCustomer());
+
 			_controller = new StandardController(_factory.Object);
 
 			_page = new StandardPage();
+			_userModel = new UserModel {SocialSecurityNumber = SocialSecurityNumber};
 		}
 
 		[Test]
@@ -50,15 +58,31 @@ namespace DevBank.Tests
 		{
 			_controller.ControllerContext = GetContextFor(_controller);
 
-			const string socialSecurityNumber = "191010101010";
-
-			_service
-				.Setup(s => s.GetCustomerBy(socialSecurityNumber))
-				.Returns(new LocalCustomer());
-
-			_controller.Send(_page, new UserModel { SocialSecurityNumber = socialSecurityNumber });
+			_controller.Send(_page, _userModel);
 
 			_service.VerifyAll();
+		}
+
+		[Test]
+		public void Should_return_viewresult()
+		{
+			_controller.ControllerContext = GetContextFor(_controller);
+
+			var result = _controller.Send(_page, _userModel);
+
+			Assert.IsNotInstanceOf<JsonResult>(result);
+			Assert.IsInstanceOf<ViewResult>(result);
+		}
+
+		[Test]
+		public void Should_return_json()
+		{
+			_controller.ControllerContext = GetContextFor(_controller, true);
+
+			var result = _controller.Send(_page, _userModel);
+
+			Assert.IsNotInstanceOf<ViewResult>(result);
+			Assert.IsInstanceOf<JsonResult>(result);
 		}
 
 		private static ControllerContext GetContextFor(ControllerBase controller, bool isAjaxRequest = false)
