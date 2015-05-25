@@ -32,7 +32,7 @@ var devbank = (function ($) {
 		return $.post(url, data);
 	};
 
-	var addListener = function() {
+	var addListener = function () {
 
 		$(formSel).on('submit', function (e) {
 			e.preventDefault();
@@ -41,7 +41,7 @@ var devbank = (function ($) {
 
 			promise.then(updateView);
 		});
-	}
+	};
 
 	var hijackForm = function(formSelector, targetSelector) {
 		formSel = formSelector;
@@ -52,6 +52,6 @@ var devbank = (function ($) {
 
 	return {
 		hijack: hijackForm
-	}
-	
+	};
+
 }(jQuery));
