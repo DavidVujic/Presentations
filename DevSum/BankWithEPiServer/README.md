@@ -3,6 +3,7 @@ Building a bank with EPiServer?
 
 Code examples from my talk at DevSum 15 on may 25th 2015 in Stockholm.
 
+Check out the blog post about the subject too: http://davidvujic.blogspot.se/2015/05/building-a-bank-with-episerver.html
 
 Session description:
 Can it be done? Should it be done?
